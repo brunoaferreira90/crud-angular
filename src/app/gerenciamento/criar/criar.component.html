@@ -1,0 +1,60 @@
+<h2 class="first">Criar</h2>
+
+<form [formGroup]="formGroup">
+
+    <div class="ui-g ui-fluid">
+
+        <div class="ui-g-12">
+            <div class="ui-g-1">
+                <label>
+                    Data Visita:
+                    <p-calendar formControlName="dataVisita"></p-calendar>
+                </label>
+            </div>
+        </div>
+
+        <div class="ui-g-12">
+            <div class="ui-g-1">
+                <label>
+                    Id Representante:
+                    <input formControlName="idRepresentante" pInputText>
+                </label>
+            </div>
+        </div>
+
+        <div class="ui-g-12">
+            <div class="ui-g-2">
+                <label>
+                    Nome do Cliente
+                    <input pInputText formControlName="nomeCliente">
+                </label>
+            </div>
+        </div>
+
+
+        <div class="ui-g-12">
+            <div class="ui-g-2">
+                <label>
+                    Endereço do Cliente
+                    <input pInputText formControlName="enderecoCliente">
+                </label>
+            </div>
+        </div>
+
+        <div class="ui-g-12">
+            <div class="ui-g-2">
+                <label>
+                    Valor Gasto com Deslocamento
+                    <input pInputText formControlName="valorGastoDeslocamento">
+                </label>
+            </div>
+        </div>
+
+
+        <div class="ui-g-1">
+            <button (click)=salvar() pButton type="button" [disabled]="!formGroup.valid">Salvar</button>
+        </div>
+
+    </div>
+
+</form>
