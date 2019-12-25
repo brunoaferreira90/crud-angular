@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { InputTextModule } from 'primeng/inputtext';
@@ -17,7 +19,10 @@ import { PesquisarComponent } from './pesquisar/pesquisar.component';
     ReactiveFormsModule,
     CalendarModule,
     InputTextModule,
-    ButtonModule
+    ButtonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    TableModule
     
   ],
   exports: [

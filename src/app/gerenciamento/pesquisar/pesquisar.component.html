@@ -1,16 +1,30 @@
 <h2 class="first">Pesquisar</h2>
 
-<!-- <p-table>
+<p-table [value]="visitas">
     <ng-template pTemplate="header">
         <tr>
-            <th>
-            </th>
+            <th>Data da Visita</th>
+            <th>Id do Representante</th>
+            <th>Nome do Cliente</th>
+            <th>Endereço do Cliente</th>
+            <th>Valor Gasto com Deslocamento</th>
+            <th>Deletar</th>
+            <th>Editar</th>
         </tr>
     </ng-template>
-    <ng-template pTemplate="body">
+    <ng-template pTemplate="body" let-visita>
         <tr>
+            <td>{{visita.dataVisita}}</td>
+            <td>{{visita.representante.codigoRepresentante}}</td>
+            <td>{{visita.cliente.nome}}</td>
+            <td>{{visita.cliente.endereco}}</td>
+            <td>{{visita.valor}}</td>
             <td>
+                <button class="ui-button-danger" type="button"  pButton (click)="editarVisita(visita.id)" icon="pi-user-edit"></button>
+            </td>
+            <td>
+                <button class="ui-button-danger" type="button"  pButton (click)="deletarVisita(visita.id)" icon="pi-exclamation-circle"></button>
             </td>
         </tr>
     </ng-template>
-</p-table> -->
+</p-table>
