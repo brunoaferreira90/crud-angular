@@ -4,7 +4,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { InputTextModule } from 'primeng/inputtext';
-import { DropdownModule } from 'primeng/dropdown';
 import { TableModule } from 'primeng/table';
 import { CriarComponent } from './criar/criar.component';
 import { PesquisarComponent } from './pesquisar/pesquisar.component';
@@ -15,12 +14,11 @@ import { PesquisarComponent } from './pesquisar/pesquisar.component';
   ],
   imports: [
     CommonModule,
+    TableModule,
     ReactiveFormsModule,
     CalendarModule,
     InputTextModule,
-    ButtonModule,
-    TableModule,
-    DropdownModule
+    ButtonModule
     
   ],
   exports: [

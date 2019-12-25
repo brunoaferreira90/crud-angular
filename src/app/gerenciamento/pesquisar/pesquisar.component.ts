@@ -16,9 +16,9 @@ export class PesquisarComponent implements OnInit {
 
   ngOnInit() {
 
-    this.service.getCarsSmall().then(cars => {
-      this.cars = cars
-    });
+    // this.service.getCarsSmall().then(cars => {
+    //   this.cars = cars
+    // });
 
   }
 

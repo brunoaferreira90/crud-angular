@@ -1,17 +1,15 @@
 <h2 class="first">Pesquisar</h2>
 
-<p-table [value]="cars">
+<p-table>
     <ng-template pTemplate="header">
         <tr>
-            <th *ngFor="let col of cols">
-                {{col.header}}
+            <th>
             </th>
         </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-car>
+    <ng-template pTemplate="body">
         <tr>
-            <td *ngFor="let col of cols">
-                    {{car[col.field]}}
+            <td>
             </td>
         </tr>
     </ng-template>

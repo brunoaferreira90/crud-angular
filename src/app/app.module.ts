@@ -1,13 +1,15 @@
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
+import { MenubarModule } from 'primeng/menubar';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
-import { HomeModule } from './home/home.module';
-import { MenubarModule } from 'primeng/menubar';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GerenciamentoModule } from './gerenciamento/gerenciamento.module';
+import { HomeModule } from './home/home.module';
+import { TableModule } from 'primeng/components/table/table';
 
 
 
@@ -23,14 +25,16 @@ import { GerenciamentoModule } from './gerenciamento/gerenciamento.module';
     MenubarModule,
     BrowserAnimationsModule,
     HomeModule,
-    GerenciamentoModule
+    GerenciamentoModule,
+    HttpClientModule
     
   ],
   exports: [
     RouterModule,
     CommonModule,
     BrowserModule,
-    MenubarModule
+    MenubarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
