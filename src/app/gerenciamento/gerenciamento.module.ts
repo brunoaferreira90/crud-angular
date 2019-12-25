@@ -14,7 +14,6 @@ import { PesquisarComponent } from './pesquisar/pesquisar.component';
   ],
   imports: [
     CommonModule,
-    TableModule,
     ReactiveFormsModule,
     CalendarModule,
     InputTextModule,
